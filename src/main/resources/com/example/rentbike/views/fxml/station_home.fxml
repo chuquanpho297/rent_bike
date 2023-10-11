@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="158.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+      <AnchorPane prefHeight="156.0" prefWidth="1201.0" style="-fx-background-color: #F4FAFD;">
+          <children>
+              <Label fx:id="stationAvailableBike" layoutX="561.0" layoutY="40.0" prefHeight="17.0" prefWidth="381.0" text="Available bikes: 38/50">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+              <Label fx:id="stationName" alignment="CENTER" layoutX="198.0" layoutY="56.0" prefHeight="43.0" prefWidth="425.0" text="Station 1" textFill="RED">
+                  <font>
+                      <Font name="Arial Bold" size="18.0" />
+                  </font>
+              </Label>
+              <Label fx:id="stationEmptyDock" layoutX="561.0" layoutY="92.0" prefHeight="17.0" prefWidth="381.0" text="Empty docks: 12/50">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+              <Button fx:id="view" layoutX="968.0" layoutY="59.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="186.0" style="-fx-background-color: #4D5DEB;" text="View" textFill="WHITE">
+                  <font>
+                      <Font name="Arial Bold" size="18.0" />
+                  </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+              </Button>
+              <ImageView fx:id="stationImage" fitHeight="144.0" fitWidth="174.0" layoutX="47.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../../assets/images/dock-bike.jpeg" />
+                  </image>
+              </ImageView>
+          </children>
+      </AnchorPane>
+</AnchorPane>
